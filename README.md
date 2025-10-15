@@ -15,13 +15,14 @@ Gabor ran all of these for us so trying to reconstruct what happened
 ## Reduction Notes (scratch)
 - `reduce.py` `main()`
   - `ray_num_cpus`, `bias_file`
-  - `generate_new_wavelength_soln` by default false
+  - `generate_new_wavelength_soln` by default false in the demo file so it wasn't run
     - Needed: `arc_file`
     - Optional: `shift_picklename`, `flat_picklename` -> `relative_throughput()`
-    - -> `calc_wavelength_soln()`
+    - `calc_wavelength_soln()`
   - `trace_output_dir`, `extraction_output_dir`, `cube_output_dir`
   - `red_flat_file`, `green_flat_file`, 'blue_flat_file`
     - *`generate_traces()`*
+    - In the demo file: green/blue flats used 0.1s, red flats used 1 s
   - `science_files`
     - *`run_extraction()`*
   - Run through pkl_files:
